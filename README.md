@@ -10,7 +10,8 @@ Here's a quick demo..
 
 Trumpeter 小号手公司 is one of the main scale model manufacturers in China,
 and [their website](http://www.trumpeter-china.com) is not only available in English, but reasonably informative.
-It is very slow however, a pain to search, and frequently down or inaccessible.
+
+It is however very slow, a pain to search, and frequently down or inaccessible.
 
 This is a little weekend project to create a fast and searchable skin for the Trumpeter catalog.
 
@@ -54,7 +55,8 @@ In Firefox, the security issue can be overcome by disabling the `security.fileur
 
 ## Running with Sinatra
 
-I've defined a simple Sinatra app in `app.rb` that can be used to serve the catalog locally over HTTP,
+I've defined a simple Sinatra app in `app.rb` that can be used to serve the catalog
+[locally over HTTP](http://localhost:4567/),
 avoiding the browser limitations with loading the JSON data file. Run it with:
 
 ```

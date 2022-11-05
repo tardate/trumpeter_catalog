@@ -11,15 +11,20 @@
       this.external_base_url = 'http://www.trumpeter-china.com';
     }
 
+    CatalogController.prototype.clearFilter = function() {
+      $('input#keyword_contains', 'form.search').val('');
+      $('select#scale_equals', 'form.search').val('');
+      $('select#category_equals', 'form.search').val('');
+      this.applyFilter();
+    };
+
     CatalogController.prototype.applyFilter = function() {
       var instance;
       instance = this;
-      var keyword_contains = $('input#keyword_contains').val();
-      if (scale != '') {
-        instance.catalog_table.DataTable().search(
-          keyword_contains, true, true
-        ).draw();
-      }
+      var keyword_contains = $('input#keyword_contains', 'form.search').val();
+      instance.catalog_table.DataTable().search(
+        keyword_contains, true, true
+      ).draw();
 
       var scale = $('select#scale_equals', 'form.search').val();
       instance.catalog_table.DataTable().column(1).search(
@@ -126,7 +131,13 @@
   })();
 
   jQuery(function() {
-    return new root.CatalogController($('#catalog-table'));
+    root.catalog = new root.CatalogController($('#catalog-table'));
+    $('[data-action="info"]').on("click", function() {
+      $('.alert').toggle();
+    });
+    $('[data-action="reset"]').on("click", function() {
+      root.catalog.clearFilter();
+    });
   });
 
 }).call(this);
