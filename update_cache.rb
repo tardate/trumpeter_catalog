@@ -15,6 +15,7 @@ class Catalog
       FileUtils.mkdir_p File.dirname(file_path)
       {}
     end
+    self
   end
 
   def save
@@ -51,7 +52,7 @@ class Catalog
   end
 
   def product_metadata
-    content['product_metadata']
+    content['product_metadata'] ||= {}
   end
 
   def product_metadata=(value)
@@ -67,14 +68,20 @@ class Scraper
   BACKOFF_SECONDS = 0.3
   BASE_URL = 'http://www.trumpeter-china.com'.freeze
   INDEX_URL = '/index.php?l=en'.freeze
-  CATEGORY_NAMES = %w[Armor Buildings Car Plane Ship].freeze
+  CATEGORY_NAMES = %w[Armor Buildings Car Plane Ship Other Tools].freeze
+  PRODUCT_TWEAKS = {
+    '06729' => { 'scale' => '1:700'}
+  }.freeze
+
+  def ensure_cache_complete
+    load_product_metadata
+    load_products
+    save
+    cache_product_images
+  end
 
   def catalog
-    @catalog ||= begin
-      result = Catalog.new
-      result.load
-      result
-    end
+    @catalog ||= Catalog.new.load
   end
 
   def save
@@ -82,12 +89,38 @@ class Scraper
     catalog.export_product_table
   end
 
-  def load_product_metadata
-    catalog.product_metadata ||= product_metadata
+  def load_product_metadata(refresh: false)
+    product_metadata(refresh: refresh)
     log 'Load Product Pages', 'loaded'
   end
 
-  def load_product_category(category_name)
+  def product_metadata(refresh: false)
+    return unless refresh || catalog.product_metadata.empty?
+
+    result = {}
+    result['products_url'] = index_doc.css('.solidblockmenu').css('a').detect { |a| a.text == 'Product' }.attr('href')
+    product_doc = get_page(result['products_url'], message: 'GET main product page')
+
+    CATEGORY_NAMES.each do |category_name|
+      url = product_doc.css('ul.menu h4').css('a').detect { |a| a.text == category_name }.attr('href')
+      category_doc = get_page(url, message: "GET #{category_name} product page")
+      last_page_url = category_doc.css('.pages a').last.attr('href') rescue nil
+      pages = last_page_url ? last_page_url.split('p=').last.to_i : 1
+      result[category_name] = {
+        'url' => url,
+        'last_page_url' => last_page_url,
+        'pages' => pages
+      }
+      log "Product #{category_name} metadata", result[category_name].to_s
+      if refresh
+        log "Refreshing/replacing Product #{category_name} curent metadata", catalog.product_metadata[category_name].to_s
+        catalog.product_metadata[category_name] = result[category_name]
+      end
+    end
+    result
+  end
+
+  def product_category(category_name)
     category_metadata = catalog.product_metadata[category_name]
     category_url = category_metadata['url']
     category_metadata['pages'].times.each do |i|
@@ -105,6 +138,7 @@ class Scraper
         product_data['code'] = product_data['name'].split(' ').last if product_data['code'].empty?
         product_data['name'] = product_data['name'].gsub(" #{product_data['code']}", '').strip
         product_data['scale'] = product.css('dd')[2].css('a').first.text.gsub('/', ':').gsub('：', ':')
+        product_data['scale'] ||= PRODUCT_TWEAKS.fetch(product_data['code'], {})['scale']
         log "Load #{category_name} Products", "#{product_data['code']} #{product_data['scale']} #{product_data['name']}"
         catalog.products[product_data['code']] = product_data
       end
@@ -112,10 +146,10 @@ class Scraper
     log "Load #{category_name} Products", 'loaded'
   end
 
-  def load_products
-    if catalog.products.empty?
+  def load_products(refresh: false)
+    if refresh || catalog.products.empty?
       CATEGORY_NAMES.each do |category_name|
-        load_product_category(category_name)
+        product_category(category_name)
       end
     end
     log 'Load Products', 'loaded'
@@ -137,26 +171,6 @@ class Scraper
     end
   end
 
-  def product_metadata
-    result = {}
-    result['products_url'] = index_doc.css('.solidblockmenu').css('a').detect { |a| a.text == 'Product' }.attr('href')
-    product_doc = get_page(result['products_url'], message: 'GET main product page')
-
-    CATEGORY_NAMES.each do |category_name|
-      url = product_doc.css('ul.menu h4').css('a').detect { |a| a.text == category_name }.attr('href')
-      category_doc = get_page(url, message: "GET #{category_name} product page")
-      last_page_url = category_doc.css('.pages a').last.attr('href') rescue nil
-      pages = last_page_url ? last_page_url.split('p=').last.to_i : 1
-      result[category_name] = {
-        'url' => url,
-        'last_page_url' => last_page_url,
-        'pages' => pages
-      }
-      log "Product #{category_name} metadata", result[category_name].to_s
-    end
-    result
-  end
-
   def index_doc
     @index_doc ||= get_page(INDEX_URL, message: 'GET main page (en)')
   end
@@ -176,9 +190,19 @@ class Scraper
 end
 
 if __FILE__ == $PROGRAM_NAME
+  operation = ARGV.shift
   scraper = Scraper.new
-  scraper.load_product_metadata
-  scraper.load_products
-  scraper.save
-  scraper.cache_product_images
+  case operation
+  when 'refresh_metadata'
+    scraper.load_product_metadata refresh: true
+    scraper.save
+  when 'refresh_products'
+    scraper.load_products refresh: true
+    scraper.save
+  when 'refresh_category'
+    scraper.product_category ARGV.shift
+    scraper.save
+  else
+    scraper.ensure_cache_complete
+  end
 end
