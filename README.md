@@ -1,6 +1,7 @@
 # Trumpeter Catalog Skin
 
-A simple and fast offline Trumpeter model catalog skin, using some nokogiri magic.
+A fast and simple skin for the Trumpeter model catalog, using some nokogiri magic.
+Currently available to [browse online here](https://trumpeter-catalog.tardate.com/).
 
 Here's a quick demo..
 
@@ -20,8 +21,8 @@ This is a little weekend project to create a fast and searchable skin for the Tr
 The catalog runs locally and needs a working ruby installation - I'm using Ruby 2.7.2 but the code is not version-sensitive.
 Dependencies can be installed with bundler in the usual way, then you are good to go:
 
-```
-$ bundle install
+```bash
+bundle install
 ```
 
 ## Caching the Catalog
@@ -29,7 +30,7 @@ $ bundle install
 The `./update_cache.rb` script builds a local cache of the Trumpeter catalog.
 NB: this is sensitive to major changes in the Trumpeter web site, but for now works fine.
 
-```
+```bash
 $ ./update_cache.rb
 [Load Product Pages][2020-12-06 21:29:24 +0800] loaded
 [Load Products][2020-12-06 21:29:24 +0800] loaded
@@ -59,7 +60,7 @@ I've defined a simple Sinatra app in `app.rb` that can be used to serve the cata
 [locally over HTTP](http://localhost:4567/),
 avoiding the browser limitations with loading the JSON data file. Run it with:
 
-```
+```bash
 $ ruby app.rb
 == Sinatra (v2.1.0) has taken the stage on 4567 for development with backup from Thin
 2020-12-06 23:31:57 +0800 Thin web server (v1.8.0 codename Possessed Pickle)
