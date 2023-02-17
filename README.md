@@ -39,6 +39,21 @@ $ ./update_cache.rb
 ...
 ```
 
+Options:
+
+```bash
+$ ./update_cache.rb help
+      Usage:
+        ruby ./update_cache.rb refresh_metadata                 # update the product metadata
+        ruby ./update_cache.rb refresh_products                 # update all the products
+        ruby ./update_cache.rb refresh_category <category_name> # update products for specific category (Armor, Buildings, Car, Plane, Ship, Other, Tools)
+        ruby ./update_cache.rb help                             # this help
+        ruby ./update_cache.rb                                  # checks/updates cache
+
+      Environment settings:
+        BACKOFF_SECONDS # override the default backoff delay 0.3 seconds
+```
+
 ## Running the Catalog
 
 After updating the cache, the `index.html` presents a very snappy searchable and filterable listing

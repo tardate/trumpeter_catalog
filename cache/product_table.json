@@ -7477,7 +7477,7 @@
     "image_url": "/Uploads/201509/55ed5de2c413b.jpg",
     "code": "06240",
     "name": "SH-60B Sea Hawk",
-    "scale": ""
+    "scale": "1:350"
   },
   {
     "category": "Plane",
@@ -14646,5 +14646,109 @@
     "code": "06624",
     "name": "40cm universal fine chains set  (two types)",
     "scale": ""
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3882&l=en",
+    "image_url": "/Uploads/202302/63eb2853bb310.jpg",
+    "code": "00935",
+    "name": "German Sd.Kfz 173 Jagdpanther Late Version",
+    "scale": "1:16"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3876&l=en",
+    "image_url": "/Uploads/202212/63a186560eb67.jpg",
+    "code": "00947",
+    "name": "StuG.III Ausf.G Late Production(2in1)",
+    "scale": "1:16"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3866&l=en",
+    "image_url": "/Uploads/202212/63a17cc4534a8.jpg",
+    "code": "09605",
+    "name": "Russian 9P149 Launching Vehicle of 9K114 Shturm-S ATGM system",
+    "scale": "1:35"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3864&l=en",
+    "image_url": "/Uploads/202212/63a177f0ea39f.jpg",
+    "code": "07456",
+    "name": "M1132 Stryker Engineer Squad Vehicle w/SOB",
+    "scale": "1:72"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3862&l=en",
+    "image_url": "/Uploads/202211/637b35f585932.jpg",
+    "code": "01086",
+    "name": "BAZ-6403 with ChMZAP-9990-071 trailer",
+    "scale": "1:35"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3856&l=en",
+    "image_url": "/Uploads/202211/637b329153c9d.jpg",
+    "code": "07180",
+    "name": "Russian 9P140 TEL of 9K57 Uragan Multiple Launch Rocket System",
+    "scale": "1:72"
+  },
+  {
+    "category": "Ship",
+    "url": "/index.php?g=home&m=product&a=show&id=3878&l=en",
+    "image_url": "/Uploads/202302/63eb252d1d6c7.jpg",
+    "code": "06742",
+    "name": "HMS Colombo",
+    "scale": "1:700"
+  },
+  {
+    "category": "Ship",
+    "url": "/index.php?g=home&m=product&a=show&id=3874&l=en",
+    "image_url": "/Uploads/202212/63a183c2a59a1.jpg",
+    "code": "07333",
+    "name": "Full Ocean Deep Manned Submersible FEN DOU ZHE",
+    "scale": "1:72"
+  },
+  {
+    "category": "Ship",
+    "url": "/index.php?g=home&m=product&a=show&id=3872&l=en",
+    "image_url": "/Uploads/202212/63a1821bb9eda.jpg",
+    "code": "07332",
+    "name": "4500-meter Manned SubmersibleSHEN HAI YONG SHI",
+    "scale": "1:72"
+  },
+  {
+    "category": "Ship",
+    "url": "/index.php?g=home&m=product&a=show&id=3870&l=en",
+    "image_url": "/Uploads/202212/63a18051b9a26.jpg",
+    "code": "07331",
+    "name": "7000-meter Manned Submersible JIAO LONG",
+    "scale": "1:72"
+  },
+  {
+    "category": "Ship",
+    "url": "/index.php?g=home&m=product&a=show&id=3860&l=en",
+    "image_url": "/Uploads/202211/637b34ce8a3bc.jpg",
+    "code": "06702",
+    "name": "Belfast 1959",
+    "scale": "1:700"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=3880&l=en",
+    "image_url": "/Uploads/202302/63eb2730ba7b1.jpg",
+    "code": "05817",
+    "name": "Mi-4A Hound",
+    "scale": "1:48"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=3868&l=en",
+    "image_url": "/Uploads/202212/63a17e2bd1d00.jpg",
+    "code": "03231",
+    "name": "F-35A Lightning II",
+    "scale": "1:32"
   }
 ]

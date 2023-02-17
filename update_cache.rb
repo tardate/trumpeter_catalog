@@ -65,11 +65,12 @@ class Catalog
 end
 
 class Scraper
-  BACKOFF_SECONDS = 0.3
+  BACKOFF_SECONDS = ENV.fetch('BACKOFF_SECONDS', 0.3).to_f
   BASE_URL = 'http://www.trumpeter-china.com'.freeze
   INDEX_URL = '/index.php?l=en'.freeze
   CATEGORY_NAMES = %w[Armor Buildings Car Plane Ship Other Tools].freeze
   PRODUCT_TWEAKS = {
+    '06240' => { 'scale' => '1:350'},
     '06729' => { 'scale' => '1:700'}
   }.freeze
 
@@ -138,7 +139,7 @@ class Scraper
         product_data['code'] = product_data['name'].split(' ').last if product_data['code'].empty?
         product_data['name'] = product_data['name'].gsub(" #{product_data['code']}", '').strip
         product_data['scale'] = product.css('dd')[2].css('a').first.text.gsub('/', ':').gsub('：', ':')
-        product_data['scale'] ||= PRODUCT_TWEAKS.fetch(product_data['code'], {})['scale']
+        product_data['scale'] = PRODUCT_TWEAKS.fetch(product_data['code'], {})['scale'] if product_data['scale'].empty?
         log "Load #{category_name} Products", "#{product_data['code']} #{product_data['scale']} #{product_data['name']}"
         catalog.products[product_data['code']] = product_data
       end
@@ -202,7 +203,19 @@ if __FILE__ == $PROGRAM_NAME
   when 'refresh_category'
     scraper.product_category ARGV.shift
     scraper.save
-  else
+  when nil
     scraper.ensure_cache_complete
+  else
+    warn <<-HELP
+      Usage:
+        ruby #{$PROGRAM_NAME} refresh_metadata                 # update the product metadata
+        ruby #{$PROGRAM_NAME} refresh_products                 # update all the product
+        ruby #{$PROGRAM_NAME} refresh_category <category_name> # update products for specific category (#{Scraper::CATEGORY_NAMES.join(', ')})
+        ruby #{$PROGRAM_NAME} help                             # this help
+        ruby #{$PROGRAM_NAME}                                  # checks/updates cache
+
+      Environment settings:
+        BACKOFF_SECONDS # override the default backoff delay 0.3 seconds
+    HELP
   end
 end
