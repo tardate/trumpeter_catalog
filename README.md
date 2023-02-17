@@ -62,11 +62,11 @@ After updating the cache, the `index.html` presents a very snappy searchable and
 of the catalog. It's a simple web page using some basic Bootstrap and Datatables features with a little custom javascript.
 
 Here's an example, with a simple search applied.
-Each entry has links to the main Trumpeter page as well as search links for the product on AliExpress and Google.
+Each entry has links to the main Trumpeter page as well as search links for the product on Scalemates, AliExpress and Google.
 
 ![file_example](./assets/file_example.jpg?raw=true)
 
-Note: the catalog is loaded from JSON file, which presents a security issue if the `skin/index.html` is loaded
+Note: the catalog is loaded from JSON file, which presents a security issue if the `index.html` is loaded
 locally as a file in a browser.
 
 In Firefox, the security issue can be overcome by disabling the `security.fileuri.strict_origin_policy` preference in `about:config`
