@@ -74,6 +74,17 @@ class Scraper
     '06729' => { 'scale' => '1:700'}
   }.freeze
 
+  def show_scales
+    scales = catalog.products.values.each_with_object({}) do |product, memo|
+      scale = product['scale'] || ''
+      memo[scale] ||= 0
+      memo[scale] += 1
+    end
+    scales.keys.sort.each do |scale|
+      puts "#{scale}: #{scales[scale]} products"
+    end
+  end
+
   def ensure_cache_complete
     load_product_metadata
     load_products
@@ -194,6 +205,8 @@ if __FILE__ == $PROGRAM_NAME
   operation = ARGV.shift
   scraper = Scraper.new
   case operation
+  when 'show_scales'
+    scraper.show_scales
   when 'refresh_metadata'
     scraper.load_product_metadata refresh: true
     scraper.save
@@ -208,6 +221,7 @@ if __FILE__ == $PROGRAM_NAME
   else
     warn <<-HELP
       Usage:
+        ruby #{$PROGRAM_NAME} show_scales                      # list all the scales referenced in the catalog
         ruby #{$PROGRAM_NAME} refresh_metadata                 # update the product metadata
         ruby #{$PROGRAM_NAME} refresh_products                 # update all the product
         ruby #{$PROGRAM_NAME} refresh_category <category_name> # update products for specific category (#{Scraper::CATEGORY_NAMES.join(', ')})

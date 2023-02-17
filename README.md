@@ -9,9 +9,10 @@ Here's a quick demo..
 
 ## Notes
 
-Trumpeter 小号手公司 is one of the main scale model manufacturers in China,
-and [their website](http://www.trumpeter-china.com) is not only available in English, but reasonably informative.
+Trumpeter is one of the major scale model manufacturers in China.
+It is operated (along with HobbyBoss) by the [Zhongshan Yatai Electric Co., Ltd. 中山市雅太电器有限公司](http://www.zs-yatai.com/)
 
+The [Trumpeter website](http://www.trumpeter-china.com) is not only available in English, but reasonably informative.
 It is however very slow, a pain to search, and frequently down or inaccessible.
 
 This is a little weekend project to create a fast and searchable skin for the Trumpeter catalog.
@@ -44,8 +45,9 @@ Options:
 ```bash
 $ ./update_cache.rb help
       Usage:
+        ruby ./update_cache.rb show_scales                      # list all the scales referenced in the catalog
         ruby ./update_cache.rb refresh_metadata                 # update the product metadata
-        ruby ./update_cache.rb refresh_products                 # update all the products
+        ruby ./update_cache.rb refresh_products                 # update all the product
         ruby ./update_cache.rb refresh_category <category_name> # update products for specific category (Armor, Buildings, Car, Plane, Ship, Other, Tools)
         ruby ./update_cache.rb help                             # this help
         ruby ./update_cache.rb                                  # checks/updates cache
@@ -90,7 +92,9 @@ $ ruby app.rb
 
 ## Credits and References
 
-* [Trumpeter Main Site](http://www.trumpeter-china.com)
+* [HobbyBoss website](http://www.hobbyboss.com)
+* [Trumpeter website](http://www.trumpeter-china.com)
+* [Zhongshan Yatai Electric Co., Ltd. 中山市雅太电器有限公司](http://www.zs-yatai.com/)
 * [Datatables](https://datatables.net/)
 * [Bootstrap](https://getbootstrap.com/docs/3.4/)
 * [Sinatra Docs](http://sinatrarb.com/)
