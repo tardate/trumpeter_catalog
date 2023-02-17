@@ -70,9 +70,22 @@ class Scraper
   INDEX_URL = '/index.php?l=en'.freeze
   CATEGORY_NAMES = %w[Armor Buildings Car Plane Ship Other Tools].freeze
   PRODUCT_TWEAKS = {
+    '02063' => { 'scale' => '1:35'},
     '06240' => { 'scale' => '1:350'},
+    '06647' => { 'scale' => '1:350'},
     '06729' => { 'scale' => '1:700'}
   }.freeze
+
+  def show_scales
+    scales = catalog.products.values.each_with_object({}) do |product, memo|
+      scale = product['scale'] || ''
+      memo[scale] ||= 0
+      memo[scale] += 1
+    end
+    scales.keys.sort.each do |scale|
+      puts "#{scale}: #{scales[scale]} products"
+    end
+  end
 
   def ensure_cache_complete
     load_product_metadata
@@ -138,8 +151,8 @@ class Scraper
         product_data['name'] = product.css('dd')[1].css('a').first.text
         product_data['code'] = product_data['name'].split(' ').last if product_data['code'].empty?
         product_data['name'] = product_data['name'].gsub(" #{product_data['code']}", '').strip
-        product_data['scale'] = product.css('dd')[2].css('a').first.text.gsub('/', ':').gsub('：', ':')
-        product_data['scale'] = PRODUCT_TWEAKS.fetch(product_data['code'], {})['scale'] if product_data['scale'].empty?
+        product_data['scale'] = PRODUCT_TWEAKS.fetch(product_data['code'], {})['scale']
+        product_data['scale'] ||= product.css('dd')[2].css('a').first.text.gsub('/', ':').gsub('：', ':')
         log "Load #{category_name} Products", "#{product_data['code']} #{product_data['scale']} #{product_data['name']}"
         catalog.products[product_data['code']] = product_data
       end
@@ -194,6 +207,8 @@ if __FILE__ == $PROGRAM_NAME
   operation = ARGV.shift
   scraper = Scraper.new
   case operation
+  when 'show_scales'
+    scraper.show_scales
   when 'refresh_metadata'
     scraper.load_product_metadata refresh: true
     scraper.save
@@ -208,6 +223,7 @@ if __FILE__ == $PROGRAM_NAME
   else
     warn <<-HELP
       Usage:
+        ruby #{$PROGRAM_NAME} show_scales                      # list all the scales referenced in the catalog
         ruby #{$PROGRAM_NAME} refresh_metadata                 # update the product metadata
         ruby #{$PROGRAM_NAME} refresh_products                 # update all the product
         ruby #{$PROGRAM_NAME} refresh_category <category_name> # update products for specific category (#{Scraper::CATEGORY_NAMES.join(', ')})

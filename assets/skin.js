@@ -9,6 +9,7 @@
       this.loadCatalog();
       this.hookActions();
       this.external_base_url = 'http://www.trumpeter-china.com';
+      this.brand_name = 'Trumpeter';
     }
 
     CatalogController.prototype.clearFilter = function() {
@@ -81,18 +82,14 @@
           instance.applyFilter();
         },
         rowCallback: function(row, data, index) {
-          var base_name;
           var cell, main_cell, description_cell;
-          var description, category_array, category_labels;
-
-          project_url = instance.external_base_url + data.url;
-          local_image_url = 'cache/images/' + data.code + '.jpg';
-          product_search_term = ('Trumpeter ' + data.code + ' ' + data.name).replace(' ', '+');
-          aliexpress_url = 'https://www.aliexpress.com/wholesale?catId=0&SearchText=' + product_search_term;
-          google_url = 'https://www.google.com/search?q=' + product_search_term;
-          scalemates_url = 'https://www.scalemates.com/search.php?fkSECTION[]=Kits&q=Trumpeter+' + data.code;
-
-          description = '';
+          var project_url = instance.external_base_url + data.url;
+          var local_image_url = 'cache/images/' + data.code + '.jpg';
+          var product_search_term = (instance.brand_name + ' ' + data.code + ' ' + data.name).replace(' ', '+');
+          var aliexpress_url = 'https://www.aliexpress.com/wholesale?catId=0&SearchText=' + product_search_term;
+          var google_url = 'https://www.google.com/search?q=' + product_search_term;
+          var scalemates_url = 'https://www.scalemates.com/search.php?fkSECTION[]=Kits&q=' + instance.brand_name + '+' + data.code;
+          var description = '';
 
           description_cell = '<div class="row"> \
             <div class="col-md-8 product-media"> \
@@ -110,7 +107,7 @@
               <br/> \
               <div class="btn-group btn-group-sm" role="group" aria-label="..."> \
                 <a href="' + project_url + '" target="_blank" class="btn btn-default"><i class="fa fa-link" aria-hidden="true"></i></a> \
-                <a href="' + project_url + '" target="_blank" type="button" class="btn btn-default">Trumpeter</a> \
+                <a href="' + project_url + '" target="_blank" type="button" class="btn btn-default">' + instance.brand_name + '</a> \
                 <a href="' + scalemates_url + '" target="_blank" type="button" class="btn btn-default">Scalemates</a> \
                 <a href="' + aliexpress_url + '" target="_blank" type="button" class="btn btn-default">AliExpress</a> \
                 <a href="' + google_url + '" target="_blank" type="button" class="btn btn-default">Google</a> \
