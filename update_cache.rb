@@ -70,7 +70,9 @@ class Scraper
   INDEX_URL = '/index.php?l=en'.freeze
   CATEGORY_NAMES = %w[Armor Buildings Car Plane Ship Other Tools].freeze
   PRODUCT_TWEAKS = {
+    '02063' => { 'scale' => '1:35'},
     '06240' => { 'scale' => '1:350'},
+    '06647' => { 'scale' => '1:350'},
     '06729' => { 'scale' => '1:700'}
   }.freeze
 
@@ -149,8 +151,8 @@ class Scraper
         product_data['name'] = product.css('dd')[1].css('a').first.text
         product_data['code'] = product_data['name'].split(' ').last if product_data['code'].empty?
         product_data['name'] = product_data['name'].gsub(" #{product_data['code']}", '').strip
-        product_data['scale'] = product.css('dd')[2].css('a').first.text.gsub('/', ':').gsub('：', ':')
-        product_data['scale'] = PRODUCT_TWEAKS.fetch(product_data['code'], {})['scale'] if product_data['scale'].empty?
+        product_data['scale'] = PRODUCT_TWEAKS.fetch(product_data['code'], {})['scale']
+        product_data['scale'] ||= product.css('dd')[2].css('a').first.text.gsub('/', ':').gsub('：', ':')
         log "Load #{category_name} Products", "#{product_data['code']} #{product_data['scale']} #{product_data['name']}"
         catalog.products[product_data['code']] = product_data
       end
