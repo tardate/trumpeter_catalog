@@ -14750,5 +14750,37 @@
     "code": "03231",
     "name": "F-35A Lightning II",
     "scale": "1:32"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3890&l=en",
+    "image_url": "/Uploads/202302/63f322ba9db75.jpg",
+    "code": "09596",
+    "name": "L4500A mit 2cm Flak 38",
+    "scale": "1:35"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3886&l=en",
+    "image_url": "/Uploads/202302/63f3219b792ac.jpg",
+    "code": "02357",
+    "name": "German Flakrakete Rheintochter I",
+    "scale": "1:35"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3884&l=en",
+    "image_url": "/Uploads/202302/63f3200596184.jpg",
+    "code": "07402",
+    "name": "German Fennek LGS - German Version",
+    "scale": "1:72"
+  },
+  {
+    "category": "Ship",
+    "url": "/index.php?g=home&m=product&a=show&id=3891&l=en",
+    "image_url": "/Uploads/202302/63f3237e4200c.jpg",
+    "code": "05371",
+    "name": "DKM H Class Battleship",
+    "scale": "1:350"
   }
 ]

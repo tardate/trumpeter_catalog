@@ -28,11 +28,11 @@ bundle install
 
 ## Caching the Catalog
 
-The `./update_cache.rb` script builds a local cache of the Trumpeter catalog.
+The `./update.rb` script builds a local cache of the Trumpeter catalog.
 NB: this is sensitive to major changes in the Trumpeter web site, but for now works fine.
 
 ```bash
-$ ./update_cache.rb
+$ ./update.rb cache
 [Load Product Pages][2020-12-06 21:29:24 +0800] loaded
 [Load Products][2020-12-06 21:29:24 +0800] loaded
 [Load Product Image][2020-12-06 21:29:24 +0800] loading cache/images/09592.jpg with a 1 second grace period delay
@@ -43,14 +43,15 @@ $ ./update_cache.rb
 Options:
 
 ```bash
-$ ./update_cache.rb help
+$ ./update.rb help
       Usage:
-        ruby ./update_cache.rb show_scales                      # list all the scales referenced in the catalog
-        ruby ./update_cache.rb refresh_metadata                 # update the product metadata
-        ruby ./update_cache.rb refresh_products                 # update all the product
-        ruby ./update_cache.rb refresh_category <category_name> # update products for specific category (Armor, Buildings, Car, Plane, Ship, Other, Tools)
-        ruby ./update_cache.rb help                             # this help
-        ruby ./update_cache.rb                                  # checks/updates cache
+        ruby ./update.rb show_scales              # list all the scales referenced in the catalog
+        ruby ./update.rb all                      # update product metadata, product items and ensures the image cache is complete
+        ruby ./update.rb metadata                 # update the product metadata
+        ruby ./update.rb products                 # update all the products
+        ruby ./update.rb category <category_name> # update products for specific category (Armor, Buildings, Car, Plane, Ship, Other, Tools)
+        ruby ./update.rb cache                    # ensures the image cache is complete
+        ruby ./update.rb (help)                   # this help
 
       Environment settings:
         BACKOFF_SECONDS # override the default backoff delay 0.3 seconds

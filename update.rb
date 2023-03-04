@@ -87,9 +87,9 @@ class Scraper
     end
   end
 
-  def ensure_cache_complete
-    load_product_metadata
-    load_products
+  def ensure_cache_complete(refresh: false)
+    load_product_metadata refresh: refresh
+    load_products refresh: refresh
     save
     cache_product_images
   end
@@ -209,26 +209,29 @@ if __FILE__ == $PROGRAM_NAME
   case operation
   when 'show_scales'
     scraper.show_scales
-  when 'refresh_metadata'
+  when 'metadata'
     scraper.load_product_metadata refresh: true
     scraper.save
-  when 'refresh_products'
+  when 'products'
     scraper.load_products refresh: true
     scraper.save
-  when 'refresh_category'
+  when 'category'
     scraper.product_category ARGV.shift
     scraper.save
-  when nil
+  when 'all'
+    scraper.ensure_cache_complete refresh: true
+  when 'cache'
     scraper.ensure_cache_complete
   else
     warn <<-HELP
       Usage:
-        ruby #{$PROGRAM_NAME} show_scales                      # list all the scales referenced in the catalog
-        ruby #{$PROGRAM_NAME} refresh_metadata                 # update the product metadata
-        ruby #{$PROGRAM_NAME} refresh_products                 # update all the product
-        ruby #{$PROGRAM_NAME} refresh_category <category_name> # update products for specific category (#{Scraper::CATEGORY_NAMES.join(', ')})
-        ruby #{$PROGRAM_NAME} help                             # this help
-        ruby #{$PROGRAM_NAME}                                  # checks/updates cache
+        ruby #{$PROGRAM_NAME} show_scales              # list all the scales referenced in the catalog
+        ruby #{$PROGRAM_NAME} all                      # update product metadata, product items and ensures the image cache is complete
+        ruby #{$PROGRAM_NAME} metadata                 # update the product metadata
+        ruby #{$PROGRAM_NAME} products                 # update all the products
+        ruby #{$PROGRAM_NAME} category <category_name> # update products for specific category (#{Scraper::CATEGORY_NAMES.join(', ')})
+        ruby #{$PROGRAM_NAME} cache                    # ensures the image cache is complete
+        ruby #{$PROGRAM_NAME} (help)                   # this help
 
       Environment settings:
         BACKOFF_SECONDS # override the default backoff delay 0.3 seconds
