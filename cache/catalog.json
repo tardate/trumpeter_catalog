@@ -14981,6 +14981,38 @@
       "code": "06747",
       "name": "Russian Destroyer Taszkient 1942",
       "scale": "1:700"
+    },
+    "09603": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=3936&l=en",
+      "image_url": "/Uploads/202308/64e2c7101088d.jpg",
+      "code": "09603",
+      "name": "T-72M MBT",
+      "scale": "1:35"
+    },
+    "07441": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=3934&l=en",
+      "image_url": "/Uploads/202308/64e2c66bd637d.jpg",
+      "code": "07441",
+      "name": "V-150 Commando w/20mm cannon",
+      "scale": "1:72"
+    },
+    "05822": {
+      "category": "Plane",
+      "url": "/index.php?g=home&m=product&a=show&id=3938&l=en",
+      "image_url": "/Uploads/202308/64e2c7e5db115.jpg",
+      "code": "05822",
+      "name": "Fairey Fulmar MK.I",
+      "scale": "1:48"
+    },
+    "05374": {
+      "category": "Ship",
+      "url": "/index.php?g=home&m=product&a=show&id=3940&l=en",
+      "image_url": "/Uploads/202308/64e2c890a3c50.jpg",
+      "code": "05374",
+      "name": "French Light Cruiser Marseillaise",
+      "scale": "1:350"
     }
   }
 }
