@@ -13874,7 +13874,7 @@
   {
     "category": "Tools",
     "url": "/index.php?g=home&m=product&a=show&id=3080&l=en",
-    "image_url": "/Uploads/201711/5a027610126b1.jpg",
+    "image_url": "/Uploads/202311/654c487d2c99c.jpg",
     "code": "09969",
     "name": "High Quality Scraper",
     "scale": ""
@@ -14974,5 +14974,93 @@
     "code": "05374",
     "name": "French Light Cruiser Marseillaise",
     "scale": "1:350"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3963&l=en",
+    "image_url": "/Uploads/202311/655b19dcd986c.jpg",
+    "code": "09607",
+    "name": "Russian Object 490A",
+    "scale": "1:35"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3961&l=en",
+    "image_url": "/Uploads/202311/655b18ff9f818.jpg",
+    "code": "09618",
+    "name": "MT-LB with zu-23-2",
+    "scale": "1:35"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3959&l=en",
+    "image_url": "/Uploads/202311/655b181605d3c.jpg",
+    "code": "07192",
+    "name": "Leopard2A6EX MBT",
+    "scale": "1:72"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3955&l=en",
+    "image_url": "/Uploads/202310/65360917722d9.jpg",
+    "code": "00945",
+    "name": "Pz.Kpfw.VI Ausf.E Sd.Kfz.181 Tiger I (Late Production)",
+    "scale": "1:16"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3947&l=en",
+    "image_url": "/Uploads/202309/650baf956d6fd.jpg",
+    "code": "09577",
+    "name": "Schwerer Zugkraftwagen 18 t with 8.8cm Flak",
+    "scale": "1:35"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3943&l=en",
+    "image_url": "/Uploads/202309/650babcb6e02a.jpg",
+    "code": "02358",
+    "name": "German 8.8cm Flak 41",
+    "scale": "1:35"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=3953&l=en",
+    "image_url": "/Uploads/202310/65321aec4ea3f.jpg",
+    "code": "03233",
+    "name": "TBD-1A Devastator",
+    "scale": "1:32"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=3949&l=en",
+    "image_url": "/Uploads/202309/650bb1b178525.jpg",
+    "code": "01640",
+    "name": "A-6A Intruder",
+    "scale": "1:72"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=3945&l=en",
+    "image_url": "/Uploads/202309/650bad8b831e0.jpg",
+    "code": "05818",
+    "name": "Mi-4AV Hound",
+    "scale": "1:48"
+  },
+  {
+    "category": "Ship",
+    "url": "/index.php?g=home&m=product&a=show&id=3951&l=en",
+    "image_url": "/Uploads/202310/653217b354706.jpg",
+    "code": "06749",
+    "name": "USS Iowa BB-61",
+    "scale": "1:700"
+  },
+  {
+    "category": "Tools",
+    "url": "/index.php?g=home&m=product&a=show&id=3957&l=en",
+    "image_url": "/Uploads/202311/654c491e18160.jpg",
+    "code": "08024",
+    "name": "Mini rechargreble electric drill",
+    "scale": ""
   }
 ]
