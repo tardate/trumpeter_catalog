@@ -15062,5 +15062,77 @@
     "code": "08024",
     "name": "Mini rechargreble electric drill",
     "scale": ""
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3979&l=en",
+    "image_url": "/Uploads/202402/65d5a2555bd3f.jpg",
+    "code": "07444",
+    "name": "USAF XM706E2",
+    "scale": "1:72"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3973&l=en",
+    "image_url": "/Uploads/202401/65adc18aad952.jpg",
+    "code": "07425",
+    "name": "M1134 Stryker Anti- Tank Guided Missile (ATGM)",
+    "scale": "1:72"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3971&l=en",
+    "image_url": "/Uploads/202312/65829e339ea41.jpg",
+    "code": "00943",
+    "name": "Sd.Kfz 251/22D",
+    "scale": "1:16"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3967&l=en",
+    "image_url": "/Uploads/202312/65829af8da6e0.jpg",
+    "code": "01096",
+    "name": "NASAMS(Norwegian Advanced Surface-to-Air Missile System)",
+    "scale": "1:35"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=3981&l=en",
+    "image_url": "/Uploads/202402/65d5a370ba789.jpg",
+    "code": "05114",
+    "name": "AH-64A Apache Early",
+    "scale": "1:35"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=3975&l=en",
+    "image_url": "/Uploads/202401/65adc2e67ab00.jpg",
+    "code": "01641",
+    "name": "A-6E Intruder",
+    "scale": "1:72"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=3965&l=en",
+    "image_url": "/Uploads/202312/658298b5af89d.jpg",
+    "code": "02825",
+    "name": "JJ-7A Trainer",
+    "scale": "1:48"
+  },
+  {
+    "category": "Ship",
+    "url": "/index.php?g=home&m=product&a=show&id=3977&l=en",
+    "image_url": "/Uploads/202401/65adc4113a863.jpg",
+    "code": "05366",
+    "name": "HMS Naiad",
+    "scale": "1:350"
+  },
+  {
+    "category": "Ship",
+    "url": "/index.php?g=home&m=product&a=show&id=3969&l=en",
+    "image_url": "/Uploads/202312/65829c6d2d52d.jpg",
+    "code": "05634",
+    "name": "USS Midway CV-41",
+    "scale": "1:350"
   }
 ]
