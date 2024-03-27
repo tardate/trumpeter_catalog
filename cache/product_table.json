@@ -15134,5 +15134,29 @@
     "code": "05634",
     "name": "USS Midway CV-41",
     "scale": "1:350"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3988&l=en",
+    "image_url": "/Uploads/202403/65fa5290dab86.jpg",
+    "code": "00948",
+    "name": "Pz.Kpfw.VI Sd.Kfz.182 Tiger II (Porsche Early production vehicle Fgst.Nr.280009)",
+    "scale": "1:16"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=3984&l=en",
+    "image_url": "/Uploads/202403/65fa4f6cd36c0.jpg",
+    "code": "07403",
+    "name": "Sd.Kfz.8 Schwerer Zugkraftwagen 12t",
+    "scale": "1:72"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=3986&l=en",
+    "image_url": "/Uploads/202403/65fa51396903e.jpg",
+    "code": "05823",
+    "name": "Fairey Fulmar MK.II",
+    "scale": "1:48"
   }
 ]
