@@ -73,7 +73,7 @@
             data: 'category', visible: false
           },
         ],
-        dom: "<'row'<'col-sm-6'l><'col-sm-6'p>>" +
+        dom: "<'row'<'col-sm-5'l><'col-sm-7'p>>" +
           "<'row'<'col-sm-12'tr>>" +
           "<'row'<'col-sm-5'i><'col-sm-7'p>>",
         order: [[0, 'asc']],
