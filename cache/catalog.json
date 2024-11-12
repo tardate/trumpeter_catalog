@@ -3,8 +3,8 @@
     "products_url": "/index.php?g=home&m=product&a=index&id=130&l=en",
     "Armor": {
       "url": "/index.php?g=home&m=product&a=index&id=168&l=en",
-      "last_page_url": "/index.php?g=home&m=product&a=index&id=168&l=en&p=49",
-      "pages": 49
+      "last_page_url": "/index.php?g=home&m=product&a=index&id=168&l=en&p=50",
+      "pages": 50
     },
     "Buildings": {
       "url": "/index.php?g=home&m=product&a=index&id=211&l=en",
@@ -15197,6 +15197,222 @@
       "code": "05823",
       "name": "Fairey Fulmar MK.II",
       "scale": "1:48"
+    },
+    "09576": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4042&l=en",
+      "image_url": "/Uploads/202410/671713de9ede4.jpg",
+      "code": "09576",
+      "name": "Schwerer Zugkraftwagen 18 t with 6 t Billstein-Crane, Sd.Kfz.9/1",
+      "scale": "1:35"
+    },
+    "01084": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4036&l=en",
+      "image_url": "/Uploads/202410/6717099acfdc4.jpg",
+      "code": "01084",
+      "name": "M915 Gun Truck",
+      "scale": "1:35"
+    },
+    "07404": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4030&l=en",
+      "image_url": "/Uploads/202409/66ed398f8cc85.jpg",
+      "code": "07404",
+      "name": "Sd.Kfz.8 Gepanzerte 12t",
+      "scale": "1:72"
+    },
+    "00944": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4028&l=en",
+      "image_url": "/Uploads/202408/66c44526caf42.jpg",
+      "code": "00944",
+      "name": "Pz.Kpfw.VI Ausf.E Sd.Kfz.181 Tiger I (Medium Production)",
+      "scale": "1:16"
+    },
+    "00955": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4022&l=en",
+      "image_url": "/Uploads/202407/669b65df14b1f.jpg",
+      "code": "00955",
+      "name": "Pz.Bef.Wg.Fahrgestell Pz.Kpfw.III.Ausf.J",
+      "scale": "1:16"
+    },
+    "07440": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4018&l=en",
+      "image_url": "/Uploads/202407/669b61571695d.jpg",
+      "code": "07440",
+      "name": "M706 Commando Armored Car Product Improved",
+      "scale": "1:72"
+    },
+    "00946": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4016&l=en",
+      "image_url": "/Uploads/202406/6674ed9679796.jpg",
+      "code": "00946",
+      "name": "StuG.III Ausf.G 1943 Production",
+      "scale": "1:16"
+    },
+    "07424": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4012&l=en",
+      "image_url": "/Uploads/202406/6674eb70a9d63.jpg",
+      "code": "07424",
+      "name": "US Army M1131 Stryker FSV",
+      "scale": "1:72"
+    },
+    "09606": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4008&l=en",
+      "image_url": "/Uploads/202405/664af78a8433a.jpg",
+      "code": "09606",
+      "name": "VBM Freccia",
+      "scale": "1:35"
+    },
+    "07445": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4006&l=en",
+      "image_url": "/Uploads/202405/664af696e4bf9.jpg",
+      "code": "07445",
+      "name": "American LaFrance Eagle Fire Pumper",
+      "scale": "1:72"
+    },
+    "09604": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=3996&l=en",
+      "image_url": "/Uploads/202404/66262b0e7e310.jpg",
+      "code": "09604",
+      "name": "T-72M1 MBT",
+      "scale": "1:35"
+    },
+    "07413": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=3992&l=en",
+      "image_url": "/Uploads/202404/662628d75360d.jpg",
+      "code": "07413",
+      "name": "US M1240 M-ATV MRAP",
+      "scale": "1:72"
+    },
+    "07193": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=3990&l=en",
+      "image_url": "/Uploads/202404/662627daa43b3.jpg",
+      "code": "07193",
+      "name": "Leopard2A6M CAN MBT",
+      "scale": "1:72"
+    },
+    "05831": {
+      "category": "Plane",
+      "url": "/index.php?g=home&m=product&a=show&id=4040&l=en",
+      "image_url": "/Uploads/202410/6717124947bb5.jpg",
+      "code": "05831",
+      "name": "Fairey Battle MKI",
+      "scale": "1:48"
+    },
+    "05828": {
+      "category": "Plane",
+      "url": "/index.php?g=home&m=product&a=show&id=4034&l=en",
+      "image_url": "/Uploads/202409/66ed3c4a9b4ac.jpg",
+      "code": "05828",
+      "name": "Mi-24A Hind-B",
+      "scale": "1:48"
+    },
+    "05115": {
+      "category": "Plane",
+      "url": "/index.php?g=home&m=product&a=show&id=4026&l=en",
+      "image_url": "/Uploads/202408/66c443cd51594.jpg",
+      "code": "05115",
+      "name": "AH-64A Apache Late",
+      "scale": "1:35"
+    },
+    "01642": {
+      "category": "Plane",
+      "url": "/index.php?g=home&m=product&a=show&id=4024&l=en",
+      "image_url": "/Uploads/202408/66c442ce9bd5a.jpg",
+      "code": "01642",
+      "name": "A-6E TRAM Intruder",
+      "scale": "1:72"
+    },
+    "05111": {
+      "category": "Plane",
+      "url": "/index.php?g=home&m=product&a=show&id=4020&l=en",
+      "image_url": "/Uploads/202407/669b641a5b6c7.jpg",
+      "code": "05111",
+      "name": "UH-1B Huey",
+      "scale": "1:35"
+    },
+    "05829": {
+      "category": "Plane",
+      "url": "/index.php?g=home&m=product&a=show&id=3998&l=en",
+      "image_url": "/Uploads/202404/66262c4c3a8a6.jpg",
+      "code": "05829",
+      "name": "Mi-24P Hind-F",
+      "scale": "1:48"
+    },
+    "03720": {
+      "category": "Ship",
+      "url": "/index.php?g=home&m=product&a=show&id=4038&l=en",
+      "image_url": "/Uploads/202410/67171023ac60c.jpg",
+      "code": "03720",
+      "name": "HMT Olympic",
+      "scale": "1:200"
+    },
+    "05367": {
+      "category": "Ship",
+      "url": "/index.php?g=home&m=product&a=show&id=4032&l=en",
+      "image_url": "/Uploads/202409/66ed3ae1eb50b.jpg",
+      "code": "05367",
+      "name": "HMS Argonaut",
+      "scale": "1:350"
+    },
+    "05372": {
+      "category": "Ship",
+      "url": "/index.php?g=home&m=product&a=show&id=4014&l=en",
+      "image_url": "/Uploads/202406/6674ec4a26659.jpg",
+      "code": "05372",
+      "name": "USS Montana BB-67",
+      "scale": "1:350"
+    },
+    "05635": {
+      "category": "Ship",
+      "url": "/index.php?g=home&m=product&a=show&id=4010&l=en",
+      "image_url": "/Uploads/202405/664af8e703636.jpg",
+      "code": "05635",
+      "name": "French Navy Helicopter Cruiser Jeanne d’Arc 2008",
+      "scale": "1:350"
+    },
+    "05375": {
+      "category": "Ship",
+      "url": "/index.php?g=home&m=product&a=show&id=3994&l=en",
+      "image_url": "/Uploads/202404/662629ef9e751.jpg",
+      "code": "05375",
+      "name": "French Light Cruiser Georges Leygues",
+      "scale": "1:350"
+    },
+    "08026": {
+      "category": "Tools",
+      "url": "/index.php?g=home&m=product&a=show&id=4004&l=en",
+      "image_url": "/Uploads/202405/664af537b0e5c.jpg",
+      "code": "08026",
+      "name": "Rivet maker for model 1",
+      "scale": ""
+    },
+    "08027": {
+      "category": "Tools",
+      "url": "/index.php?g=home&m=product&a=show&id=4002&l=en",
+      "image_url": "/Uploads/202405/664af424ebcf1.jpg",
+      "code": "08027",
+      "name": "Rivet maker for model 2",
+      "scale": ""
+    },
+    "08029": {
+      "category": "Tools",
+      "url": "/index.php?g=home&m=product&a=show&id=4000&l=en",
+      "image_url": "/Uploads/202405/664af2f6bb3e8.jpg",
+      "code": "08029",
+      "name": "Speciai marking machine for model",
+      "scale": ""
     }
   }
 }
