@@ -23,3 +23,32 @@
 .product-media img {
   max-width: 100%;
 }
+
+@media (max-width: 768px) {
+  .navbar-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-top: 0px;
+  }
+  .navbar-form .form-group {
+    width: 100%;
+  }
+  .navbar-form .form-control {
+    width: 100%;
+  }
+  .navbar-form .control-label {
+    display: none;
+  }
+  .navbar-default .navbar-text {
+    font-size: large;
+    margin-top: 12px;
+  }
+  .dataTables_info,
+  .dataTables_paginate,
+  .dataTables_length {
+    font-size: 10px;
+  }
+}

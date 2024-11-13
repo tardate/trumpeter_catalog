@@ -5,6 +5,10 @@
     <meta content="IE=Edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Trumpeter 小号手公司 Custom Catalog</title>
+    <meta name="description" content="Explore the complete Trumpeter (小号手公司) catalog of plastic scale models including military vehicles, aircraft, ships, and more. The simple and fast interface is ideal for scale modellers wanting to look up Trumpeter products.">
+    <meta name="robots" content="all">
+    <meta name="keywords" content="Trumpeter model kits, Trumpeter scale models, Trumpeter catalog">
+
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/r/bs-3.3.5/jq-2.1.4,dt-1.10.8/datatables.min.css"/>
     <link rel="stylesheet" href="assets/skin.css" type="text/css">
@@ -32,12 +36,12 @@
         <form accept-charset="UTF-8" action="" class="search form-inline navbar-form" method="get" novalidate="novalidate">
           <div class="control-group form-group select optional search_keyword_contains">
             <label class="select optional control-label" for="keyword_contains">Search</label>
-            <input class="select optional form-control" id="keyword_contains" type="text" name="search[keyword_contains]"/>
+            <input class="select optional form-control" id="keyword_contains" type="text" name="search[keyword_contains]" placeholder="Enter search keywords"/>
           </div>
           <div class="control-group form-group select optional search_category_equals">
             <label class="select optional control-label" for="category_equals">Category</label>
             <select class="select optional form-control" id="category_equals" name="search[category_equals]">
-              <option value=""></option>
+              <option value="" selected>Any Category</option>
               <option value="Armor">Armor</option>
               <option value="Buildings">Buildings</option>
               <option value="Car">Car</option>
@@ -50,7 +54,7 @@
           <div class="control-group form-group select optional search_scale_equals">
             <label class="select optional control-label" for="scale_equals">Scale</label>
             <select class="select optional form-control" id="scale_equals" name="search[scale_equals]">
-              <option value=""></option>
+              <option value="" selected>Any Scale</option>
               <option value="1:12">1:12</option>
               <option value="1:16">1:16</option>
               <option value="1:24">1:24</option>
