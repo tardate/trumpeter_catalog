@@ -15582,5 +15582,85 @@
     "code": "06655",
     "name": "Olympic&Britannic light sets",
     "scale": "1:200"
+  },
+  {
+    "category": "Tools",
+    "url": "/index.php?g=home&m=product&a=show&id=4113&l=en",
+    "image_url": "/Uploads/202509/68ce55c24b6e2.jpg",
+    "code": "08045",
+    "name": "Model kit tools holder - type D",
+    "scale": ""
+  },
+  {
+    "category": "Tools",
+    "url": "/index.php?g=home&m=product&a=show&id=4111&l=en",
+    "image_url": "/Uploads/202509/68ce54fc41dbe.jpg",
+    "code": "08036",
+    "name": "Model kit tools holder - type C",
+    "scale": ""
+  },
+  {
+    "category": "Tools",
+    "url": "/index.php?g=home&m=product&a=show&id=4109&l=en",
+    "image_url": "/Uploads/202509/68ce54417de69.jpg",
+    "code": "08035",
+    "name": "Model kit tools holder - type B",
+    "scale": ""
+  },
+  {
+    "category": "Tools",
+    "url": "/index.php?g=home&m=product&a=show&id=4107&l=en",
+    "image_url": "/Uploads/202509/68ce537d493da.jpg",
+    "code": "08034",
+    "name": "Model kit tools holder - type A",
+    "scale": ""
+  },
+  {
+    "category": "Tools",
+    "url": "/index.php?g=home&m=product&a=show&id=4105&l=en",
+    "image_url": "/Uploads/202509/68ce527dc2a08.jpg",
+    "code": "08028",
+    "name": "40ml Square Bottle for model solvent",
+    "scale": ""
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4121&l=en",
+    "image_url": "/Uploads/202509/68ce5c35d5e49.jpg",
+    "code": "05864",
+    "name": "Chinese J-20S Mighty Dragon",
+    "scale": "1:48"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4119&l=en",
+    "image_url": "/Uploads/202509/68ce5afd27a64.jpg",
+    "code": "05849",
+    "name": "Chinese Z-10G Attack Helicopter",
+    "scale": "1:48"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4098&l=en",
+    "image_url": "/Uploads/202508/68a57f1d8c774.jpg",
+    "code": "05117",
+    "name": "AH-1W Super Cobra (Turned Exhaust)",
+    "scale": "1:35"
+  },
+  {
+    "category": "Ship",
+    "url": "/index.php?g=home&m=product&a=show&id=4117&l=en",
+    "image_url": "/Uploads/202509/68ce598deb538.jpg",
+    "code": "06751",
+    "name": "Queen Elizabeth Aircraft Carrier",
+    "scale": "1:700"
+  },
+  {
+    "category": "Ship",
+    "url": "/index.php?g=home&m=product&a=show&id=4096&l=en",
+    "image_url": "/Uploads/202508/68a57d63dd49e.jpg",
+    "code": "05378",
+    "name": "HMS Royal Oak",
+    "scale": "1:350"
   }
 ]
