@@ -66,6 +66,8 @@ end
 
 class Scraper
   BACKOFF_SECONDS = ENV.fetch('BACKOFF_SECONDS', 0.3).to_f
+  OPEN_TIMEOUT = ENV.fetch('OPEN_TIMEOUT', 30).to_f
+  READ_TIMEOUT = ENV.fetch('READ_TIMEOUT', 60).to_f
   BASE_URL = 'http://www.trumpeter-china.com'.freeze
   INDEX_URL = '/index.php?l=en'.freeze
   CATEGORY_NAMES = %w[Armor Buildings Car Plane Ship Other Tools].freeze
@@ -137,10 +139,11 @@ class Scraper
   def product_category(category_name)
     category_metadata = catalog.product_metadata[category_name]
     category_url = category_metadata['url']
-    category_metadata['pages'].times.each do |i|
+    pages = category_metadata['pages']
+    pages.times.each do |i|
       page = i + 1
       page_url = page == 1 ? category_url : "#{category_url}&p=#{page}"
-      page_doc = get_page(page_url, message: "#{category_name} Page #{page}")
+      page_doc = get_page(page_url, message: "#{category_name} Page #{page}/#{pages}")
 
       page_doc.css('ul#products dl').each do |product|
         product_data = {}
@@ -191,8 +194,8 @@ class Scraper
 
   def get_page(relative_url, message: nil)
     url = BASE_URL + relative_url
-    log message, "loading #{url} with a #{BACKOFF_SECONDS} second grace period delay"
-    html = URI.open(URI.parse(url))
+    log message, "loading #{url} with a #{BACKOFF_SECONDS}s grace period, #{OPEN_TIMEOUT}s open timeout, #{READ_TIMEOUT}s read timeout"
+    html = URI.open(URI.parse(url), open_timeout: OPEN_TIMEOUT, read_timeout: READ_TIMEOUT)
     result = Nokogiri::HTML(html)
     sleep BACKOFF_SECONDS
     result
@@ -235,6 +238,8 @@ if __FILE__ == $PROGRAM_NAME
 
       Environment settings:
         BACKOFF_SECONDS # override the default backoff delay 0.3 seconds
+        OPEN_TIMEOUT    # override the default open timeout 30 seconds
+        READ_TIMEOUT    # override the default read timeout 60 seconds
     HELP
   end
 end
