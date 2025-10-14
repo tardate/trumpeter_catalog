@@ -15701,6 +15701,22 @@
       "code": "05378",
       "name": "HMS Royal Oak",
       "scale": "1:350"
+    },
+    "07427": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4115&l=en",
+      "image_url": "/Uploads/202509/68ce5810558bb.jpg",
+      "code": "07427",
+      "name": "M1132 Stryker Engineer Squad Vehicle w/SMP",
+      "scale": "1:72"
+    },
+    "00949": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4100&l=en",
+      "image_url": "/Uploads/202508/68a580398d52c.jpg",
+      "code": "00949",
+      "name": "Pz.Kpfw.VI Sd.Kfz.182 Tiger II (Henschel 105mm)",
+      "scale": "1:16"
     }
   }
 }
