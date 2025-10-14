@@ -55,6 +55,8 @@ $ ./update.rb help
 
       Environment settings:
         BACKOFF_SECONDS # override the default backoff delay 0.3 seconds
+        OPEN_TIMEOUT    # override the default open timeout 30 seconds
+        READ_TIMEOUT    # override the default read timeout 60 seconds
 ```
 
 ## Running the Catalog
