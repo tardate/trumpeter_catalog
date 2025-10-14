@@ -22,6 +22,22 @@
 
 .product-media img {
   max-width: 100%;
+  max-height: 200px;
+}
+
+.dataTable thead {
+  display: none;
+}
+
+.product-links {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 1300px) {
+  .navbar-form .form-control,
+  .navbar-form .control-label {
+    font-size: smaller;
+  }
 }
 
 @media (max-width: 768px) {
@@ -50,5 +66,8 @@
   .dataTables_paginate,
   .dataTables_length {
     font-size: 10px;
+  }
+  .product-media img {
+    max-height: 257px;
   }
 }

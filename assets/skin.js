@@ -37,6 +37,8 @@
         category, false, false
       ).draw();
 
+      var sort_by = $('select#sort_by', 'form.search').val();
+      instance.catalog_table.DataTable().order(sort_by.split('-')).draw();
     };
 
     CatalogController.prototype.hookActions = function() {
@@ -65,13 +67,12 @@
           {
             data: 'name'
           }, {
-            data: 'scale'
+            data: 'scale', visible: false
           }, {
             data: 'code', visible: false
-          },
-          {
+          },{
             data: 'category', visible: false
-          },
+          }
         ],
         dom: "<'row'<'col-sm-5'l><'col-sm-7'p>>" +
           "<'row'<'col-sm-12'tr>>" +
@@ -92,26 +93,28 @@
           var description = '';
 
           description_cell = '<div class="row"> \
-            <div class="col-md-8 product-media"> \
-              <a href="' + project_url + '" target="_blank"> \
-                <img class="media-object" src="' + local_image_url + '" alt=""> \
-              </a> \
-            </div> \
             <div class="col-md-4"> \
               <h4 class="media-heading">' + data.name + '</h4> \
               <div class="text-muted">' + description + '</div> \
               <div> \
                 <span class="label label-success">' + data.code + '</span> \
                 <span class="label label-primary">' + data.category + '</span> \
+                <span class="label label-warning">' + data.scale + '</span> \
               </div>  \
               <br/> \
-              <div class="btn-group btn-group-sm" role="group" aria-label="..."> \
+              <div class="btn-group btn-group-sm product-links" role="group" aria-label="..."> \
                 <a href="' + project_url + '" target="_blank" class="btn btn-default"><i class="fa fa-link" aria-hidden="true"></i></a> \
                 <a href="' + project_url + '" target="_blank" type="button" class="btn btn-default">' + instance.brand_name + '</a> \
                 <a href="' + scalemates_url + '" target="_blank" type="button" class="btn btn-default">Scalemates</a> \
                 <a href="' + aliexpress_url + '" target="_blank" type="button" class="btn btn-default">AliExpress</a> \
                 <a href="' + google_url + '" target="_blank" type="button" class="btn btn-default">Google</a> \
               </div> \
+              <br/> \
+            </div> \
+            <div class="col-md-8 product-media"> \
+              <a href="' + project_url + '" target="_blank"> \
+                <img class="media-object" src="' + local_image_url + '" alt=""> \
+              </a> \
             </div> \
           </div>';
 
