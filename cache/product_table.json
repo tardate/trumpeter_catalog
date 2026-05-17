@@ -15678,5 +15678,261 @@
     "code": "00949",
     "name": "Pz.Kpfw.VI Sd.Kfz.182 Tiger II (Henschel 105mm)",
     "scale": "1:16"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=4185&l=en",
+    "image_url": "/Uploads/202604/69ead399ede0c.jpg",
+    "code": "00964",
+    "name": "German Sd.Kfz.184 Ferdinand",
+    "scale": "1:16"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=4175&l=en",
+    "image_url": "/Uploads/202603/69a947667118c.jpg",
+    "code": "01098",
+    "name": "M1088 FMTV Tractor with AN/TPY-2 X Band Radar",
+    "scale": "1:35"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=4171&l=en",
+    "image_url": "/Uploads/202601/696f28d14f319.jpg",
+    "code": "07428",
+    "name": "M1133 Stryker MEV",
+    "scale": "1:72"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=4135&l=en",
+    "image_url": "/Uploads/202512/69465ae11d908.jpg",
+    "code": "00954",
+    "name": "German Sd.Kfz.164 Nashorn",
+    "scale": "1:16"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=4131&l=en",
+    "image_url": "/Uploads/202511/691ee117ab52f.jpg",
+    "code": "09611",
+    "name": "British MBT Challenger-1(mk.3)",
+    "scale": "1:35"
+  },
+  {
+    "category": "Armor",
+    "url": "/index.php?g=home&m=product&a=show&id=4127&l=en",
+    "image_url": "/Uploads/202511/691edd8056848.jpg",
+    "code": "01070",
+    "name": "FAUN SLT 50-3 “ELEFANT” with SaAnh.52t",
+    "scale": "1:35"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4181&l=en",
+    "image_url": "/Uploads/202603/69c34500f4061.jpg",
+    "code": "02427",
+    "name": "P-47D Thunderbolt Razorback",
+    "scale": "1:24"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4179&l=en",
+    "image_url": "/Uploads/202603/69c34369a4f50.jpg",
+    "code": "01689",
+    "name": "PLAAF J-36 Prototype",
+    "scale": "1:72"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4177&l=en",
+    "image_url": "/Uploads/202603/69a94869e97f0.jpg",
+    "code": "05119",
+    "name": "Ka-52 Alligator Hokum-B",
+    "scale": "1:35"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4173&l=en",
+    "image_url": "/Uploads/202601/696f2a0b7fede.jpg",
+    "code": "05845",
+    "name": "Buccaneer S.2D",
+    "scale": "1:48"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4169&l=en",
+    "image_url": "/Uploads/202601/696f280d94868.jpg",
+    "code": "06289",
+    "name": "EA-18G Growler",
+    "scale": "1:350"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4167&l=en",
+    "image_url": "/Uploads/202601/696f279ec1b2f.jpg",
+    "code": "06288",
+    "name": "F-35C Lightning II",
+    "scale": "1:350"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4165&l=en",
+    "image_url": "/Uploads/202601/696f26f63aa50.jpg",
+    "code": "06287",
+    "name": "Gazelle Helicopter",
+    "scale": "1:350"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4163&l=en",
+    "image_url": "/Uploads/202601/696f26753296c.jpg",
+    "code": "06286",
+    "name": "Alouette Helicopter",
+    "scale": "1:350"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4161&l=en",
+    "image_url": "/Uploads/202601/696f2602270d9.jpg",
+    "code": "04212",
+    "name": "SH-60B Seahawk",
+    "scale": "1:200"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4159&l=en",
+    "image_url": "/Uploads/202601/696f25929efe0.jpg",
+    "code": "04211",
+    "name": "Chinese Z-20J",
+    "scale": "1:200"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4157&l=en",
+    "image_url": "/Uploads/202601/696f25079ee12.jpg",
+    "code": "03477",
+    "name": "F-35B Lightning II",
+    "scale": "1:700"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4155&l=en",
+    "image_url": "/Uploads/202601/696f2b00920f3.jpg",
+    "code": "03476",
+    "name": "E-1B Tracer",
+    "scale": "1:700"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4153&l=en",
+    "image_url": "/Uploads/202601/696f23b386d3f.jpg",
+    "code": "03475",
+    "name": "A-1 Skyraider",
+    "scale": "1:700"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4151&l=en",
+    "image_url": "/Uploads/202601/696f23135a02f.jpg",
+    "code": "03474",
+    "name": "SH-2 Seasprite",
+    "scale": "1:700"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4149&l=en",
+    "image_url": "/Uploads/202601/696f22781d429.jpg",
+    "code": "03473",
+    "name": "F-8 Crusader",
+    "scale": "1:700"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4147&l=en",
+    "image_url": "/Uploads/202601/696f2202f2d75.jpg",
+    "code": "03472",
+    "name": "A-4C Sky Hawk",
+    "scale": "1:700"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4145&l=en",
+    "image_url": "/Uploads/202601/696f2182bff68.jpg",
+    "code": "03471",
+    "name": "EH-101 Merlin",
+    "scale": "1:700"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4143&l=en",
+    "image_url": "/Uploads/202601/696f21127e371.jpg",
+    "code": "03470",
+    "name": "HAS-3",
+    "scale": "1:700"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4141&l=en",
+    "image_url": "/Uploads/202601/696f20863487f.jpg",
+    "code": "03469",
+    "name": "Blackburn Skua",
+    "scale": "1:700"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4139&l=en",
+    "image_url": "/Uploads/202601/696f1ff03d738.jpg",
+    "code": "03468",
+    "name": "Fulmar MK.1",
+    "scale": "1:700"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4137&l=en",
+    "image_url": "/Uploads/202601/696f1f6259176.jpg",
+    "code": "03467",
+    "name": "Fairey Swordfish",
+    "scale": "1:700"
+  },
+  {
+    "category": "Plane",
+    "url": "/index.php?g=home&m=product&a=show&id=4125&l=en",
+    "image_url": "/Uploads/202510/68f5f8b0607be.jpg",
+    "code": "05853",
+    "name": "Russian Mi-8MTV5 Hip",
+    "scale": "1:48"
+  },
+  {
+    "category": "Ship",
+    "url": "/index.php?g=home&m=product&a=show&id=4183&l=en",
+    "image_url": "/Uploads/202604/69ead1efc58dd.jpg",
+    "code": "05379",
+    "name": "HMS Resolution",
+    "scale": "1:350"
+  },
+  {
+    "category": "Ship",
+    "url": "/index.php?g=home&m=product&a=show&id=4133&l=en",
+    "image_url": "/Uploads/202512/694659e64fdd1.jpg",
+    "code": "05381",
+    "name": "Italian Heavy Cruiser Pola",
+    "scale": "1:350"
+  },
+  {
+    "category": "Ship",
+    "url": "/index.php?g=home&m=product&a=show&id=4129&l=en",
+    "image_url": "/Uploads/202511/691edfb21d975.jpg",
+    "code": "03722",
+    "name": "USS Stevens DD-479",
+    "scale": "1:200"
+  },
+  {
+    "category": "Ship",
+    "url": "/index.php?g=home&m=product&a=show&id=4123&l=en",
+    "image_url": "/Uploads/202510/68f5f75d55fcb.jpg",
+    "code": "05361",
+    "name": "German Scharnhorst Battleship",
+    "scale": "1:350"
   }
 ]
