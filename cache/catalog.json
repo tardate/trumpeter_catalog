@@ -3,8 +3,8 @@
     "products_url": "/index.php?g=home&m=product&a=index&id=130&l=en",
     "Armor": {
       "url": "/index.php?g=home&m=product&a=index&id=168&l=en",
-      "last_page_url": "/index.php?g=home&m=product&a=index&id=168&l=en&p=51",
-      "pages": 51
+      "last_page_url": "/index.php?g=home&m=product&a=index&id=168&l=en&p=52",
+      "pages": 52
     },
     "Buildings": {
       "url": "/index.php?g=home&m=product&a=index&id=211&l=en",
@@ -15972,6 +15972,94 @@
       "image_url": "/Uploads/202510/68f5f75d55fcb.jpg",
       "code": "05361",
       "name": "German Scharnhorst Battleship",
+      "scale": "1:350"
+    },
+    "09615": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4205&l=en",
+      "image_url": "/Uploads/202608/6a9545067069b.jpg",
+      "code": "09615",
+      "name": "Russian T-14 Armata MBT Mod.2022",
+      "scale": "1:35"
+    },
+    "00952": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4201&l=en",
+      "image_url": "/Uploads/202607/6a6812fa45346.jpg",
+      "code": "00952",
+      "name": "German Sd.Kfz.165 Hummel (Early Production)",
+      "scale": "1:16"
+    },
+    "09612": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4195&l=en",
+      "image_url": "/Uploads/202606/6a3e1259b011c.jpg",
+      "code": "09612",
+      "name": "British MBT Challenger-1(mk.3) \"Gulf War\"",
+      "scale": "1:35"
+    },
+    "00957": {
+      "category": "Armor",
+      "url": "/index.php?g=home&m=product&a=show&id=4191&l=en",
+      "image_url": "/Uploads/202606/6a21201a5c2d7.jpg",
+      "code": "00957",
+      "name": "Pz.Kpfw.III Ausf.N - Tunisia",
+      "scale": "1:16"
+    },
+    "03932": {
+      "category": "Plane",
+      "url": "/index.php?g=home&m=product&a=show&id=4203&l=en",
+      "image_url": "/Uploads/202608/6a9543dd967e7.jpg",
+      "code": "03932",
+      "name": "PLAAF J-36",
+      "scale": "1:144"
+    },
+    "05848": {
+      "category": "Plane",
+      "url": "/index.php?g=home&m=product&a=show&id=4197&l=en",
+      "image_url": "/Uploads/202607/6a680e156bd05.jpg",
+      "code": "05848",
+      "name": "Chinese Z-10K Attack Helicopter",
+      "scale": "1:48"
+    },
+    "05855": {
+      "category": "Plane",
+      "url": "/index.php?g=home&m=product&a=show&id=4189&l=en",
+      "image_url": "/Uploads/202606/6a211ea7e3820.jpg",
+      "code": "05855",
+      "name": "Russian Mi-171Sh Hip",
+      "scale": "1:48"
+    },
+    "06723": {
+      "category": "Ship",
+      "url": "/index.php?g=home&m=product&a=show&id=4207&l=en",
+      "image_url": "/Uploads/202608/6a95463932508.jpg",
+      "code": "06723",
+      "name": "USS Langley CV-1",
+      "scale": "1:700"
+    },
+    "03703": {
+      "category": "Ship",
+      "url": "/index.php?g=home&m=product&a=show&id=4199&l=en",
+      "image_url": "/Uploads/202607/6a6810705120e.jpg",
+      "code": "03703",
+      "name": "German Tirpitz Battleship",
+      "scale": "1:200"
+    },
+    "05360": {
+      "category": "Ship",
+      "url": "/index.php?g=home&m=product&a=show&id=4193&l=en",
+      "image_url": "/Uploads/202606/6a3e10b466ee5.jpg",
+      "code": "05360",
+      "name": "German Gneisenau Battleship",
+      "scale": "1:350"
+    },
+    "05376": {
+      "category": "Ship",
+      "url": "/index.php?g=home&m=product&a=show&id=4187&l=en",
+      "image_url": "/Uploads/202606/6a211d517761c.jpg",
+      "code": "05376",
+      "name": "HMS Renown Battle-cruiser 1942",
       "scale": "1:350"
     }
   }
